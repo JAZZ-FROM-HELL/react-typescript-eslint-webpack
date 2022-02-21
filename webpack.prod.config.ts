@@ -13,7 +13,7 @@ const config: Configuration = {
     },
 };
 
-// @ts-ignore
+if (!config.plugins) config.plugins = [];
 config.plugins.push(new CleanWebpackPlugin());
 
 export default config;

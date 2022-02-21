@@ -22,7 +22,7 @@ const config: webpack.Configuration = {
     },
 };
 
-// @ts-ignore
+if (!config.plugins) config.plugins = [];
 config.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 export default config;
